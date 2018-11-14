@@ -1,0 +1,2 @@
+jar cmf manifext.mf name.jar package1 package2 package3 //jar cmf manifext.mf name.jar package1 package2 package3
+java -jar name.jar

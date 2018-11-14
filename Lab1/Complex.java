@@ -56,8 +56,8 @@ public class Complex{
 		for (int i=0 ;i<args.length; i++) 
 		{
          try {
-            intArgs[i] = Integer.parseInt(args[i]);
-			System.out.println(intArgs[i]);
+            intArgs[i] = Integer.parseInt(args[i]); 
+			//System.out.println(intArgs[i]);
          } catch (NumberFormatException e) {
             System.err.println("Failed trying to parse a non-numeric argument, " + args[i]);
          }
@@ -68,8 +68,8 @@ public class Complex{
 		 
 		Complex c4 = new Complex();
 		
-		c1.setComplex(3,4);
-		c2.setComplex(5,6);
+		c1.setComplex(intArgs[0],intArgs[1]);
+		c2.setComplex(intArgs[2],intArgs[3]);
 		System.out.print("c1=");
 		c1.print();
 		System.out.print("c2=");
@@ -77,7 +77,7 @@ public class Complex{
 		c3=Complex.add(c1,c2);
 		System.out.print("c3=c1+c2=");
 		c3.print();
-		for (int i : intArgs) 
+		for (int i =0; i<intArgs.length ; i++) 
 		{
          System.out.println(intArgs[i]);
          }
